@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>關於weilin</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<style>
+    body{
+        margin: 0%;
+    }
+    .test{
+        width: 100%;
+        height: 40px;
+    }
+
+    #myCarousel{
+        width:50%;
+        height: 50%;
+        /*width:700px;
+        height: 80vh;
+        margin-top: 3%;*/
+
+        /* margin-left: 2%; */
+    }
+    .carousel-inner{
+        margin-left: 50%;
+    }
+    #myCarousel  .carousel-inner > .item > img {
+        display: block;
+        /*700 500*/
+        width:100%;
+        height: 50%;
+        margin-top: 8%;
+
+    }
+    .carousel-control{
+        height: 100%;
+    }
+    @media screen and (max-width: 768px){
+        .carousel-control{
+            height: 50%;
+        }
+    }
+    .myself{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:400px;
+        padding-top:10px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .myphoto{
+        width:150px;
+        height:300px;
+        margin-right: 100px;
+    }
+    h2{
+        text-align: center;
+    }
+    table{
+        width: 90%;
+        border-collapse: collapse;
+    }
+
+    table tr{
+        border-bottom: solid 2px white;
+    }
+
+    table tr:last-child{
+        border-bottom: none;
+    }
+
+    table th{
+        position: relative;
+        width: 40%;
+        background-color: #7d7d7d;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    table th:after{
+        display: block;
+        content: "";
+        width: 0px;
+        height: 0px;
+        position: absolute;
+        top:calc(50% - 10px);
+        right:-10px;
+        border-left: 10px solid #7d7d7d;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+    }
+
+    table td{
+        text-align: left;
+        width: 60%;
+        text-align: center;
+        background-color: #eee;
+        padding: 10px 0;
+    }
+
+    .main {
+        margin: 20px 0px;
+        align-items: center;
+        width: 50%;
+    }
+    .title{
+        height:70px;
+        margin:10px;
+        margin-top: 100px;
+        padding-bottom:0px;
+    }
+    .title p{
+        font-size: 50px;
+        text-align: center;
+        font-weight:bold;
+    }  
+    .title2{
+        height:70px;
+        margin:10px;
+        
+    }
+    .title2 p{
+        font-size: 50px;
+        text-align: center;
+        font-weight:bold;
+    } 
+    .habbit {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom:30px;
+    }
+
+    .item2{
+        margin:10px;
+        padding-top:10px;
+        width:400px;
+        height:100%;
+        align-items: center;
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: rgb(163, 181, 221);
+        transition:all 0.3s 0s ease;
+    }
+    .item2:hover{
+        box-shadow: rgba(0,0,0,0.4) 3px 3px 15px 0px; 
+        background-color: rgb(163, 181, 210);
+    }
+    .photo{
+        width: 300px;
+        height: 200px;
+        background-color: #fff;
+        margin: auto;
+        margin-top: 2%;
+        background-size: cover;
+        display: block;
+        background-repeat:no-repeat; 
+    }
+    h3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-weight:bold;
+    }
+    .footer {
+        width: 100%;
+        height: 170px;
+        background-color:	#0f1626;
+    }
+    .clear{
+        width: 100%;
+        height: 20px;
+    }
+    .contact{
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        height: 100px;
+    }
+    .contact p{
+        line-height:10px;
+        font-size: 15px;
+        color: #eceff2;
+        text-align: center;
+        font-family:verdana, Times New Roman, 微軟正黑體;
+    }
+    .click{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header {
+        background-color: #0f1626;
+        position: fixed;
+        z-index:100;
+        width:100%;
+        top:0;
+        left:0;
+    }
+    .hamburger {
+        background-color: #000000;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: block;
+    }
+    .hamburger-line {
+        width: 40px;
+        height: 3px;
+        background-color: #ffffff;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        box-shadow: 0px 10px 0px #ffffff, 0px -10px 0px #ffffff;
+    }
+    .menu {
+        background-color: #000000;
+        height: 100vh;
+        width: 80%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        transition: 0.5s;
+        margin: auto;
+    }
+    #menu-switcher {
+        display: none;
+    }
+    #menu-switcher:checked ~ .menu {
+        transform: translateX(0%);
+    }
+    
+    .menu li a {
+        color:white;
+        text-decoration:none;
+        display:inline-block;
+        padding:10px 20px;
+        font-weight:bold;
+        z-index:101;
+    }
+    @media screen and (min-width: 768px) {
+        .hamburger {
+            display: none;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+        }
+        .menu {
+            transform: translateX(0%);
+            height: auto;
+            width: auto;
+            display: flex;
+            position: relative;
+            background-color: transparent;
+        }
+    }
+</style>
+<body>
+    <header>
+        <input type="checkbox" name="menu-switcher" id="menu-switcher" />
+        <label for="menu-switcher" class="hamburger">
+            <div class="hamburger-line"></div>
+        </label>
+        <ul class="menu">
+            <li><a href="about.html">關於</a></li>
+            <li><a href="idol.html">偶像</a></li>
+            <li><a href="contest.html">盃賽</a></li>
+            <li><a href="animate.html">動畫</a></li>
+        </ul>
+    </header>
+    <!--<nav>
+        <a href="about.html">關於</a>
+        <a href="idol.html">偶像</a>
+        <a href="contest.html">盃賽</a>
+        <a href="animate.html">動畫</a>
+    </nav>-->
+    <div class="test"></div>
+    <!--<div class="topcarousel">-->
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="3000" >  
+                <!-- 輪播（Carousel）指標 -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
+            
+                <!-- 輪播（Carousel）專案 -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <img class="d-block w-100"  src="t1.jpg" alt="First slide" >
+                    </div>
+                    <div class="item">
+                        <img class="d-block w-100" src="t2.jpg" alt="Second slide">
+                    </div>
+                    <div class="item">
+                        <img class="d-block w-100" src="t3.jpg" alt="Third slide">
+                    </div>
+                    <div class="item">
+                        <img class="d-block w-100" src="t4.jpg" alt="Fourth slide">
+                    </div>
+                </div>
+            </div>
+            <!-- 輪播（Carousel）導航 -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+
+    <!--</div>-->
+    <div class="title">
+        <p>關於我</p>
+    </div>
+    <div class="myself">
+        <div class="myphoto">
+            <img src="A1063301.jpg" alt="我的個人照" width="170px" height="250px">
+            <h2>王薇琳</h2>
+        </div>
+        <div class="main">
+            <table>
+                <tr>
+                    <th>性別</th>
+                    <td>女</td>
+                </tr>
+                <tr>
+                    <th>生日</th>
+                    <td>1999/03/23</td>
+                </tr>
+                <tr>
+                    <th>身高</th>
+                    <td>157 cm</td>
+                </tr>
+                <tr>
+                    <th>學歷</th>
+                    <td>國立高雄大學</td>
+                </tr>
+                <tr>
+                    <th>家鄉</th>
+                    <td>台中市沙鹿區</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="title2">
+        <p>興趣</p>
+    </div>
+    <div class="habbit">
+        <div class="item2">
+            <img class="photo" src="b1.jpg" alt="" >
+            <h3>打籃球</h3>
+        </div>
+        <div class="item2">
+            <img class="photo" src="play.jpg" alt="" >
+            <h3>出門玩</h3>
+        </div>
+        <div class="item2">
+            <img class="photo" src="Anime.jpg" alt="" >
+            <h3>看動畫</h3>
+
+        </div>
+    </div>
+
+    <div class="footer" id="contact">
+        <div class="contact" >
+            <div class="clear"></div>
+            <p>聯絡方式</p>
+            <div class="clear"></div>
+            <p>mail：aileen3725@gmail.com</p>
+            <p>國立高雄大學 資訊管理學系</p>
+            
+            <div class="click">                    
+                <a href="https://www.instagram.com/weilin0323/">
+                    <i class="fa fa-instagram fa-3x" style="color:white"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100003499297938" style="margin-left: 20%;">
+                    <i class="fa fa-facebook-square fa-3x" style="color:white" ></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weilin參加的比賽</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<style>
+    body{
+        margin: 0%;
+        
+    }
+    .test{
+        width: 100%;
+        height: 40px;
+    }
+    
+    .container {
+        width:100%;
+        padding:20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color:skyblue;
+    }
+    .item{
+        margin:10px;
+        width:400px;
+        height:100%;
+        align-items: center;
+        /*border:solid black;*/
+        border-radius: 10px;
+        overflow: hidden;
+        
+        background-color: #fff;
+    }
+    .item:hover{
+        box-shadow: rgba(0,0,0,0.4) 3px 3px 15px 0px; 
+    }
+    .photo{
+        height:300px;
+        width: 400px;
+    }
+    .item p{
+        text-align: center;
+        margin:5px;
+    }
+    h3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-weight:bold;
+        margin:0px;
+    }
+    .footer {
+        width: 100%;
+        height: 170px;
+        background-color:	#0f1626;
+    }
+    .clear{
+        width: 100%;
+        height: 20px;
+    }
+    .contact{
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        height: 100px;
+    }
+    .contact p{
+        line-height:10px;
+        font-size: 15px;
+        color: #eceff2;
+        text-align: center;
+        font-family:verdana, Times New Roman, 微軟正黑體;
+    }
+    .click{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header {
+        background-color: #0f1626;
+        position: fixed;
+        z-index:100;
+        width:100%;
+        top:0;
+        left:0;
+    }
+    .hamburger {
+        background-color: #000000;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: block;
+    }
+    .hamburger-line {
+        width: 40px;
+        height: 3px;
+        background-color: #ffffff;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        box-shadow: 0px 10px 0px #ffffff, 0px -10px 0px #ffffff;
+    }
+    .menu {
+        background-color: #000000;
+        height: 100vh;
+        width: 80%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        transition: 0.5s;
+        margin: auto;
+    }
+    #menu-switcher {
+        display: none;
+    }
+    #menu-switcher:checked ~ .menu {
+        transform: translateX(0%);
+    }
+    .menu li a {
+        color:white;
+        text-decoration:none;
+        display:inline-block;
+        padding:10px 20px;
+        font-weight:bold;
+        z-index:101;
+        text-align: center;
+    }
+    @media screen and (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu {
+        transform: translateX(0%);
+        height: auto;
+        width: auto;
+        display: flex;
+        position: relative;
+        background-color: transparent;
+    }
+}
+</style>
+<body>
+    <header>
+        <input type="checkbox" name="menu-switcher" id="menu-switcher" />
+        <label for="menu-switcher" class="hamburger">
+            <div class="hamburger-line"></div>
+        </label>
+        <ul class="menu">
+            <li><a href="about.html">關於</a></li>
+            <li><a href="idol.html">偶像</a></li>
+            <li><a href="contest.html">盃賽</a></li>
+            <li><a href="animate.html">動畫</a></li>
+        </ul>
+    </header>
+    <div class="test"></div>
+    <div class="container">
+        <div class="item">
+            <img class="photo" src="b1.jpg" alt="" >
+            <h3>大資盃</h3>
+            <p>3場120分鐘打好打滿<br>
+                謝謝女籃的大家、對手、來看我們比賽的學姐<br>
+                很可惜沒有晉級 不過蠻好玩的<br>
+                明年還要再來!! 
+            </p>
+        </div>
+        <div class="item">
+            <img class="photo" src="b2.jpeg" alt="" >
+            <h3>2019南資盃</h3>
+            <p>好累 跑到快往生<br>
+                但還是從中學到很多<br>
+                謝謝大家carry<br>
+                祈妏岱璇畢業快樂!
+            </p>
+        </div>
+        <div class="item">
+            <img class="photo" src="b3.jpeg" alt="" >
+            <h3>2019聯盟賽</h3>
+            <p>第一次聯隊就拿獎盃<br>
+                都是託大家的福<br>
+                未來也一起加油<br>
+                資物化gogo
+            </p>
+        </div>
+        <div class="item">
+            <img class="photo" src="b4.jpg" alt="" >
+            <h3>新生盃</h3>
+            <p>大家都很累但還是撐下去了<br>
+                雖然沒機會拿獎杯了<br>
+                但能有這群隊友和超讚的加油團<br>
+                還有學姐們還有球經真的很幸運
+            </p>
+        </div>
+        <div class="item">
+            <img class="photo" src="b5.jpg" alt="" >
+            <h3>OB賽</h3>
+            <p>今年回來好多人<br>
+                跟黃金陣容打四小時很累但很滿足<br>
+                終於參加到抽卡遊戲<br>
+                等王薇琳3年後帶金卡回來打OBㄚ
+            </p>
+        </div>
+        <div class="item">
+            <img class="photo" src="b6.jpg" alt="" >
+            <h3>2021南資盃</h3>
+            <p>終於拿獎盃了!<br>
+                開心開心<br>
+                跟應物聯隊好讚<br>
+                之後也要一起跑下去
+            </p>
+        </div>
+    </div>
+    <div class="footer" id="contact">
+        <div class="contact" >
+            <div class="clear"></div>
+            <p>聯絡方式</p>
+            <div class="clear"></div>
+            <p>mail：aileen3725@gmail.com</p>
+            <p>國立高雄大學 資訊管理學系</p>
+            
+            <div class="click">                    
+                <a href="https://www.instagram.com/weilin0323/">
+                    <i class="fa fa-instagram fa-3x" style="color:white"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100003499297938" style="margin-left: 20%;">
+                    <i class="fa fa-facebook-square fa-3x" style="color:white" ></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

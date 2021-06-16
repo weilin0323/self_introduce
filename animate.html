@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weilin喜歡的動畫</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<style>
+    body{
+        margin: 0%;
+        background-color: #222;
+    }
+    .test{
+        width: 100%;
+        height: 40px;
+    }
+    
+    .special {
+        font-size: 35px;
+        margin-top: 30px;
+    }
+    
+    .card {
+        width: 800px;
+        display: flex;
+        border: solid 2px black;
+        background-color: #fff;
+        border-radius: 10px;
+        overflow: hidden;
+        margin:10px;
+    }
+    .left {
+        width: 50%;
+        background-image: url(https://img.linetv.tw/large/drama/11471-p.jpg);
+        background-size: cover;
+    }
+    .right {
+        width: 50%;
+        /* 往內擠多少距離*/
+        padding: 20px;
+    }
+    .left2 {
+        width: 50%;
+        background-image: url(https://i0.hdslb.com/bfs/bangumi/a80ec71741a712df274c1c1bf9cd4368c0014f46.jpg@450w_600h.webp);
+        background-size: cover;
+    }
+    .right2 {
+        width: 50%;
+        /* 往內擠多少距離*/
+        padding: 20px;
+    }
+    .smalltext {
+        font-size: 15px;
+        /* margin表示外距*/
+        margin-left: 10px;
+        color: orange;
+        font-weight: normal;
+    }
+    .anime ul {
+        padding-left: 0;
+    }
+    .anime ul li {
+        display: inline-block;
+        /*上下 左右*/
+        padding: 5px 10px;
+        border-radius: 5px;
+        vertical-align: top;
+        background-color: orange;
+        color: white;
+        font-weight: bold;
+        margin-right: 5px;
+    }
+    p {
+        line-height: 25px;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: #222;
+        margin-bottom:20px;
+    }
+    .footer {
+        width: 100%;
+        height: 170px;
+        background-color:	#0f1626;
+    }
+    .clear{
+        width: 100%;
+        height: 20px;
+    }
+    .contact{
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        height: 100px;
+    }
+    .contact p{
+        line-height:10px;
+        font-size: 15px;
+        color: #eceff2;
+        text-align: center;
+        font-family:verdana, Times New Roman, 微軟正黑體;
+    }
+    .click{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header {
+        background-color: #0f1626;
+        position: fixed;
+        z-index:100;
+        width:100%;
+        top:0;
+        left:0;
+    }
+    .hamburger {
+        background-color: #000000;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: block;
+    }
+    .hamburger-line {
+        width: 40px;
+        height: 3px;
+        background-color: #ffffff;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        box-shadow: 0px 10px 0px #ffffff, 0px -10px 0px #ffffff;
+    }
+    .menu {
+        background-color: #000000;
+        height: 100vh;
+        width: 80%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        transition: 0.5s;
+        margin: auto;
+    }
+    #menu-switcher {
+        display: none;
+    }
+    #menu-switcher:checked ~ .menu {
+        transform: translateX(0%);
+    }
+    .menu li a {
+        color:white;
+        text-decoration:none;
+        display:inline-block;
+        padding:10px 20px;
+        font-weight:bold;
+        z-index:101;
+        text-align: center;
+    }
+    @media screen and (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu {
+        transform: translateX(0%);
+        height: auto;
+        width: auto;
+        display: flex;
+        position: relative;
+        background-color: transparent;
+    }
+}
+
+</style>
+<body>
+    <header>
+        <input type="checkbox" name="menu-switcher" id="menu-switcher" />
+        <label for="menu-switcher" class="hamburger">
+            <div class="hamburger-line"></div>
+        </label>
+        <ul class="menu">
+            <li><a href="about.html">關於</a></li>
+            <li><a href="idol.html">偶像</a></li>
+            <li><a href="contest.html">盃賽</a></li>
+            <li><a href="animate.html">動畫</a></li>
+        </ul>
+    </header>
+    <div class="test"></div>
+    <div class="container">
+        <div class="card">
+            <div class="left"></div>
+            <div class="right">
+                <h1>家庭教師<span class="smalltext">reborn</span></h1>
+                <hr>
+                <p>《家庭教師HITMAN REBORN!》是根據原著漫畫《家庭教師HITMAN REBORN!》改編的電視動畫作品。</p>
+                <h2 class="special">概要</h2>
+                <p>與原作的劇情及登場人物設定均有大幅變更。故事內容依序主要分為導入部分、瓦利亞部分、未來部分、阿爾柯巴雷諾試煉(原創)部分、初代家族篇(原創)部分、未來決戰篇</p>
+                <h2>故事簡介</h2>
+                <ul class=anime>
+                    <li>未來篇</li>
+                    <li>阿爾柯巴雷諾篇</li>
+                    <li>初代家族篇</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card">
+            <div class="left2"></div>
+            <div class="right2">
+                <h1>閃電十一人<span class="smalltext">イナズマイレブン</span></h1>
+                <hr>
+                <p>閃電十一人有別於普通的角色扮演遊戲，這是以收集、育成足球隊為主題的RPG。玩家是一隊弱小足球部的隊長，以增加部員、練習及比賽來進行遊戲，目標是成為全國大賽的冠軍。</p>
+                <h2 class="special">概要</h2>
+                <p>故事一開始，主角圓堂守就讀於雷門中學，一開始雷門是一個很弱的足球學校，非常熱愛足球的圓堂創立了足球社。但是，社員人數嚴重不足，而且帝國學園也向雷門提出友誼賽。圓堂辛苦的招募球員，終於找齊了11個人，開始和帝國學園比賽。
+                <br>於是，由於雷門中學的興起，雷門中學決定進軍「明日之星足球大賽」。經過一番的特訓與決鬥，雷門打敗了擁有神之水的世宇子國中，得到了全國冠軍。</p>
+                <h2>故事簡介</h2>
+                <ul class=anime>
+                    <li>明日之星足球大賽</li>
+                    <li>威脅的侵略者</li>
+                    <li>世界挑戰</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer" id="contact">
+        <div class="contact" >
+            <div class="clear"></div>
+            <p>聯絡方式</p>
+            <div class="clear"></div>
+            <p>mail：aileen3725@gmail.com</p>
+            <p>國立高雄大學 資訊管理學系</p>
+            
+            <div class="click">                    
+                <a href="https://www.instagram.com/weilin0323/">
+                    <i class="fa fa-instagram fa-3x" style="color:white"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100003499297938" style="margin-left: 20%;">
+                    <i class="fa fa-facebook-square fa-3x" style="color:white" ></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

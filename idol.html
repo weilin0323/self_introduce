@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weilin的偶像</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<style>
+    body{
+        margin: 0%;
+    }
+   
+    .red1{
+        width:100%;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction:column;
+    }
+    .text{
+        display: block;
+        color:#F08080;
+        font-weight:bold;
+        font-size: 50px;
+    }
+    .redphoto1{
+        width: 80%;
+        height: 50%;
+        display: block;
+    }
+    .test{
+        width: 100%;
+        height: 40px;
+    }
+    .red2{
+        width:100%;
+        background-color: skyblue;
+        display: flex;
+        text-align:center;
+    }
+    .redphoto2{
+        width: 750px;
+        height: 450px;
+        display: block;
+        position:left;
+    }
+    .textcenter{
+        text-align:left;
+    }
+    
+    @media screen and (max-width:768px){
+        .red2{
+            display: block;
+        }
+        .redphoto2{
+            display: block;
+            width: 100%;
+        }
+        .textcenter{
+            display: block;
+            width: 100%;
+
+        }
+    }
+    
+    .red2 li{
+        font-weight:bold;
+        font-size:20px;
+    }
+    .red3{
+        width:100%;
+        flex-wrap: wrap;
+        background-color:#ecd4d4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    iframe{
+        margin:10px;
+    }
+    .red4{
+        width:100%;
+        background-color:#dafeb8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .irene{
+        width:230px;
+        height:300px;
+        margin:20px;
+    }
+    .footer {
+        width: 100%;
+        height: 170px;
+        background-color:	#0f1626;
+    }
+    .clear{
+        width: 100%;
+        height: 20px;
+    }
+    .contact{
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        height: 100px;
+    }
+    .contact p{
+        line-height:10px;
+        font-size: 15px;
+        color: #eceff2;
+        text-align: center;
+        font-family:verdana, Times New Roman, 微軟正黑體;
+    }
+    .click{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header {
+        background-color: #0f1626;
+        position: fixed;
+        z-index:100;
+        width:100%;
+        top:0;
+        left:0;
+    }
+    .hamburger {
+        background-color: #000000;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        display: block;
+    }
+    .hamburger-line {
+        width: 40px;
+        height: 3px;
+        background-color: #ffffff;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        box-shadow: 0px 10px 0px #ffffff, 0px -10px 0px #ffffff;
+    }
+    .menu {
+        background-color: #000000;
+        height: 100vh;
+        width: 80%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        transition: 0.5s;
+        margin: auto;
+    }
+    #menu-switcher {
+        display: none;
+    }
+    #menu-switcher:checked ~ .menu {
+        transform: translateX(0%);
+    }
+    
+    .menu li a {
+        color:white;
+        text-decoration:none;
+        display:inline-block;
+        padding:10px 20px;
+        font-weight:bold;
+        z-index:101;
+        text-align: center;
+    }
+    @media screen and (min-width: 768px) {
+    .hamburger {
+        display: none;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu {
+        transform: translateX(0%);
+        height: auto;
+        width: auto;
+        display: flex;
+        position: relative;
+        background-color: transparent;
+    }
+}
+</style>
+<body>
+    <header>
+        <input type="checkbox" name="menu-switcher" id="menu-switcher" />
+        <label for="menu-switcher" class="hamburger">
+            <div class="hamburger-line"></div>
+        </label>
+        <ul class="menu">
+            <li><a href="about.html">關於</a></li>
+            <li><a href="idol.html">偶像</a></li>
+            <li><a href="contest.html">盃賽</a></li>
+            <li><a href="animate.html">動畫</a></li>
+        </ul>
+    </header>
+    <div class="test"></div>
+    <div class="red1">
+        <img class="redphoto1" src="https://a.ksd-i.com/a/2019-08-19/119434-763412.png" alt="" >
+        <div class="text">Red Velvet</div>
+    </div>
+    <div class="red2">
+        <img class="redphoto2" src="22.jpg" alt="">
+        <div class="textcenter">
+            <h2>是由韓國SM娛樂旗下2014年所推出的女子組合。</h2>
+            <h2>由Irene、Seulgi、Wendy、Joy及Yeri共五位成員組成，並由Irene擔任隊長</h2>
+            <h2>代表作品:</h2>
+            <ul>
+                <li>Ice Cream Cake</li>
+                <li>Dumb Dumb</li>
+                <li>Russian Roulette</li>
+                <li>Red Flavor</li>
+                <li>Peek-A-Boo</li>
+                <li>Bad Boy</li>
+                <li>Psycho</li>
+            </ul>
+            <br>
+        </div>
+    </div>
+    <div class="red3">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/uR8Mrt1IpXg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/J_CFBjAyPWE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="red4">
+        <img class="irene" src="https://epop.my/cms/wp-content/uploads/2021/01/ErxL7Q_UYAAIOFJ.jpeg" alt="" >
+        <img class="irene" src="http://i.imgur.com/ltV53Po.jpg" alt="" >
+        <img class="irene" src="https://i.pinimg.com/originals/0e/40/19/0e4019bd136609ecdb47b95b14ea8770.jpg" alt="" >
+        <img class="irene" src="https://d8t7p8z5.rocketcdn.me/wp-content/uploads/2019/01/Power-Puff-Girls-Joy-Fashion-red-Velvet-fashion.jpg" alt="" >
+        <img class="irene" src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Yeri_at_ICN_Airport_on_January_10%2C_2020.png" alt="" >
+    </div>
+    <div class="footer" id="contact">
+        <div class="contact" >
+            <div class="clear"></div>
+            <p>聯絡方式</p>
+            <div class="clear"></div>
+            <p>mail：aileen3725@gmail.com</p>
+            <p>國立高雄大學 資訊管理學系</p>
+            
+            <div class="click">                    
+                <a href="https://www.instagram.com/weilin0323/">
+                    <i class="fa fa-instagram fa-3x" style="color:white"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100003499297938" style="margin-left: 20%;">
+                    <i class="fa fa-facebook-square fa-3x" style="color:white" ></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
